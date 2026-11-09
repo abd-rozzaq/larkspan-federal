@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Larkspan Federal Solutions — Mission-ready technology for federal agencies</title>
+<meta name="description" content="Larkspan Federal helps civilian and defense agencies modernize legacy systems, secure mission data, and deliver digital services people can actually use. Concept project by Abdul Rozzaq.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;background:#fff}
+body{font-family:'Public Sans',system-ui,sans-serif;color:#4A5563;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+*{box-sizing:border-box}
+a{color:#0F2A44;text-underline-offset:3px}
+a:hover{color:#0B2036}
+h1,h2,h3,p,dl,dd{margin:0}
+button{font-family:inherit}
+img{display:block}
+@keyframes lk-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes lk-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</helmet>
+
+<template id="__bundler_thumbnail" data-bg-color="#0B2036"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><rect width="120" height="120" fill="#0B2036"></rect><rect x="38" y="38" width="44" height="44" rx="4" fill="none" stroke="#E0A526" stroke-width="2.5"></rect><path d="M46 73c4-12 9-18 14-18s10 6 14 18M46 73h28" fill="none" stroke="#fff" stroke-width="2.5"></path></svg></template>
+<sc-if value="{{ showPre }}" hint-placeholder-val="{{ true }}">
+  <div data-pre="root" role="status" aria-label="Loading. Concept Project by Abdul Rozzaq" style="position:fixed;inset:0;z-index:500;background:#0B2036;color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(24px,4vw,56px);overflow:hidden">
+    <div aria-hidden="true" style="position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:calc(100% / 12) 100%;pointer-events:none"></div>
+    <div data-pre="top" style="position:relative;display:flex;justify-content:space-between;align-items:center;gap:16px">
+      <span style="display:flex;align-items:center;gap:12px">
+        <svg width="34" height="34" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="0.75" y="0.75" width="30.5" height="30.5" rx="3" stroke="#E0A526" stroke-width="1.5"></rect><path d="M6 24c3-9 7-13.5 10-13.5S23 15 26 24" stroke="#fff" stroke-width="1.5"></path><path d="M6 24h20M11 24v-6.5M16 24v-9M21 24v-6.5" stroke="#fff" stroke-width="1.5"></path></svg>
+        <span style="font-weight:800;font-size:18px">Larkspan Federal</span>
+      </span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#C5D0DC">Portfolio · 2026</span>
+    </div>
+    <div style="position:relative;display:flex;flex-direction:column;gap:8px">
+      <span style="display:block;overflow:hidden"><span data-pre="l1" style="display:block;font-family:'IBM Plex Mono',monospace;font-size:clamp(13px,1.1vw,16px);letter-spacing:.14em;text-transform:uppercase;color:#E0A526">Concept Project</span></span>
+      <span style="display:block;overflow:hidden;padding-bottom:.06em"><span data-pre="l2" style="display:block;font-size:clamp(48px,9vw,150px);line-height:.95;font-weight:800;letter-spacing:-.05em">by Abdul</span></span>
+      <span style="display:block;overflow:hidden;padding-bottom:.06em"><span data-pre="l3" style="display:block;font-size:clamp(48px,9vw,150px);line-height:.95;font-weight:800;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px #E0A526">Rozzaq</span></span>
+    </div>
+    <div style="position:relative;display:flex;flex-direction:column;gap:16px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px">
+        <span style="font-size:15px;color:#C5D0DC;max-width:320px;line-height:22px">Larkspan Federal is a fictional company created for this case study.</span>
+        <span style="font-size:clamp(48px,6vw,96px);line-height:.85;font-weight:800;letter-spacing:-.05em;font-variant-numeric:tabular-nums"><span data-pre="count">0</span><span style="color:#E0A526">%</span></span>
+      </div>
+      <div style="height:2px;background:rgba(255,255,255,.15);overflow:hidden"><div data-pre="bar" style="height:100%;width:100%;background:#E0A526;transform-origin:left;transform:scaleX(0)"></div></div>
+    </div>
+  </div>
+</sc-if>
+
+<a href="#main" style="position:fixed;left:16px;top:-80px;z-index:200;background:#E0A526;color:#0F2A44;padding:12px 18px;font-weight:700;border-radius:4px;text-decoration:none" style-focus="top:12px;outline:3px solid #fff;outline-offset:2px">Skip to content</a>
+
+<header ref="{{ headerRef }}" style="position:fixed;top:0;left:0;right:0;z-index:100;background:{{ headerBg }};backdrop-filter:{{ headerBlur }};border-bottom:1px solid {{ headerLine }};transition:background .4s ease,border-color .4s ease">
+  <div style="max-width:1392px;margin:0 auto;padding:0 clamp(20px,3vw,48px);height:{{ headerH }};display:flex;align-items:center;gap:32px;transition:height .4s ease">
+    <a href="#" aria-label="Larkspan Federal Solutions home" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;flex-shrink:0" style-focus="outline:3px solid #E0A526;outline-offset:4px">
+      <svg width="34" height="34" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="0.75" y="0.75" width="30.5" height="30.5" rx="3" stroke="#E0A526" stroke-width="1.5"></rect><path d="M6 24c3-9 7-13.5 10-13.5S23 15 26 24" stroke="#fff" stroke-width="1.5"></path><path d="M6 24h20M11 24v-6.5M16 24v-9M21 24v-6.5" stroke="#fff" stroke-width="1.5"></path></svg>
+      <span style="display:flex;flex-direction:column;line-height:1"><span style="font-weight:800;font-size:20px;letter-spacing:-.01em">Larkspan</span><span style="font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#C5D0DC;margin-top:5px">Federal Solutions</span></span>
+    </a>
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+      <nav aria-label="Primary" style="display:flex;align-items:center;gap:2px;flex:1">
+        <button aria-expanded="{{ capOpen }}" onClick="{{ toggleCap }}" style="display:flex;align-items:center;gap:6px;height:44px;padding:0 13px;background:transparent;border:0;color:#fff;font-size:15px;font-weight:500;cursor:pointer;border-radius:4px" style-hover="background:rgba(255,255,255,.1)" style-focus="outline:3px solid #E0A526">Capabilities <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" stroke="currentColor" stroke-width="1.5"></path></svg></button>
+        <a href="#" style="display:flex;align-items:center;height:44px;padding:0 13px;color:#fff;font-size:15px;font-weight:500;text-decoration:none;border-radius:4px" style-hover="background:rgba(255,255,255,.1);color:#fff" style-focus="outline:3px solid #E0A526">Contract Vehicles</a>
+        <a href="#" style="display:flex;align-items:center;height:44px;padding:0 13px;color:#fff;font-size:15px;font-weight:500;text-decoration:none;border-radius:4px" style-hover="background:rgba(255,255,255,.1);color:#fff" style-focus="outline:3px solid #E0A526">Past Performance</a>
+        <div style="position:relative">
+          <button aria-expanded="{{ aboutOpen }}" onClick="{{ toggleAbout }}" style="display:flex;align-items:center;gap:6px;height:44px;padding:0 13px;background:transparent;border:0;color:#fff;font-size:15px;font-weight:500;cursor:pointer;border-radius:4px" style-hover="background:rgba(255,255,255,.1)" style-focus="outline:3px solid #E0A526">About <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" stroke="currentColor" stroke-width="1.5"></path></svg></button>
+          <sc-if value="{{ aboutOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;top:58px;left:0;width:260px;background:#fff;border-radius:6px;box-shadow:0 24px 48px rgba(11,32,54,.28);padding:8px;display:flex;flex-direction:column">
+              <a href="#" style="padding:12px 14px;border-radius:4px;text-decoration:none;font-size:15px;font-weight:600" style-hover="background:#F4F6F8">Company overview</a>
+              <a href="#" style="padding:12px 14px;border-radius:4px;text-decoration:none;font-size:15px;font-weight:600" style-hover="background:#F4F6F8">Leadership</a>
+              <a href="#" style="padding:12px 14px;border-radius:4px;text-decoration:none;font-size:15px;font-weight:600" style-hover="background:#F4F6F8">Certifications</a>
+              <a href="#" style="padding:12px 14px;border-radius:4px;text-decoration:none;font-size:15px;font-weight:600" style-hover="background:#F4F6F8">Teaming Partners</a>
+            </div>
+          </sc-if>
+        </div>
+        <a href="#" style="display:flex;align-items:center;height:44px;padding:0 13px;color:#fff;font-size:15px;font-weight:500;text-decoration:none;border-radius:4px" style-hover="background:rgba(255,255,255,.1);color:#fff" style-focus="outline:3px solid #E0A526">Careers</a>
+        <a href="#" style="display:flex;align-items:center;height:44px;padding:0 13px;color:#fff;font-size:15px;font-weight:500;text-decoration:none;border-radius:4px" style-hover="background:rgba(255,255,255,.1);color:#fff" style-focus="outline:3px solid #E0A526">Insights</a>
+      </nav>
+      <div style="display:flex;align-items:center;gap:20px;flex-shrink:0">
+        <a href="#" style="display:flex;align-items:center;gap:8px;height:44px;color:#fff;font-size:14px;font-weight:600;text-decoration:none" style-hover="color:#E0A526" style-focus="outline:3px solid #E0A526;outline-offset:2px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2v8m0 0 3-3m-3 3L5 7M2.5 12.5h11" stroke="#E0A526" stroke-width="1.5"></path></svg>Capability Statement (PDF)</a>
+        <a href="#" style="display:flex;align-items:center;height:46px;padding:0 22px;background:#E0A526;color:#0F2A44;font-weight:700;font-size:15px;border-radius:999px;text-decoration:none;transition:transform .25s ease,background .25s ease" style-hover="background:#F0B93E;color:#0F2A44;transform:translateY(-2px)" style-focus="outline:3px solid #fff;outline-offset:2px">Contact Us</a>
+      </div>
+    </sc-if>
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+      <div style="margin-left:auto;display:flex;align-items:center;gap:8px">
+        <a href="#" style="display:flex;align-items:center;height:44px;padding:0 18px;background:#E0A526;color:#0F2A44;font-weight:700;font-size:15px;border-radius:999px;text-decoration:none" style-focus="outline:3px solid #fff;outline-offset:2px">Contact Us</a>
+        <button aria-expanded="{{ mobileOpen }}" aria-label="Menu" onClick="{{ toggleMobile }}" style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:transparent;border:1px solid rgba(255,255,255,.35);border-radius:999px;color:#fff;cursor:pointer" style-focus="outline:3px solid #E0A526"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="{{ burgerPath }}" stroke="currentColor" stroke-width="1.5"></path></svg></button>
+      </div>
+    </sc-if>
+  </div>
+
+  <sc-if value="{{ capOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:absolute;left:0;right:0;top:100%;background:#fff;box-shadow:0 32px 64px rgba(11,32,54,.25)">
+      <div style="max-width:1392px;margin:0 auto;padding:36px clamp(20px,3vw,48px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) minmax(0,1.4fr);gap:12px">
+        <a href="#" style="padding:18px;border-radius:6px;text-decoration:none;display:flex;flex-direction:column;gap:8px" style-hover="background:#F4F6F8"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#4A5563">01</span><span style="font-size:17px;font-weight:700">Cloud Modernization</span><span style="font-size:14px;line-height:20px;color:#4A5563">Migration to FedRAMP-authorized environments</span></a>
+        <a href="#" style="padding:18px;border-radius:6px;text-decoration:none;display:flex;flex-direction:column;gap:8px" style-hover="background:#F4F6F8"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#4A5563">02</span><span style="font-size:17px;font-weight:700">Cybersecurity &amp; Zero Trust</span><span style="font-size:14px;line-height:20px;color:#4A5563">ATO support, RMF, continuous monitoring</span></a>
+        <a href="#" style="padding:18px;border-radius:6px;text-decoration:none;display:flex;flex-direction:column;gap:8px" style-hover="background:#F4F6F8"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#4A5563">03</span><span style="font-size:17px;font-weight:700">Data &amp; Analytics</span><span style="font-size:14px;line-height:20px;color:#4A5563">Data platforms, dashboards, decision support</span></a>
+        <a href="#" style="padding:18px;border-radius:6px;text-decoration:none;display:flex;flex-direction:column;gap:8px" style-hover="background:#F4F6F8"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#4A5563">04</span><span style="font-size:17px;font-weight:700">Digital Services</span><span style="font-size:14px;line-height:20px;color:#4A5563">Section 508 compliant websites and apps</span></a>
+        <a href="#" style="position:relative;border-radius:6px;overflow:hidden;min-height:180px;text-decoration:none;display:flex;align-items:flex-end">
+          <img src="images/pexels-7693733-w800.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+          <span style="position:relative;width:100%;padding:18px;background:linear-gradient(transparent,rgba(11,32,54,.92));color:#fff;font-weight:700;font-size:15px;display:flex;justify-content:space-between;align-items:center">Download Capability Statement<span style="color:#E0A526">↓</span></span>
+        </a>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ mobileOpen }}" hint-placeholder-val="{{ false }}">
+    <nav aria-label="Mobile" style="background:#0F2A44;padding:8px 24px 28px;display:flex;flex-direction:column;max-height:calc(100vh - 72px);overflow:auto">
+      <button aria-expanded="{{ accCap }}" onClick="{{ toggleAccCap }}" style="display:flex;justify-content:space-between;align-items:center;min-height:56px;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.12);color:#fff;font-size:22px;font-weight:700;text-align:left;padding:0;cursor:pointer">Capabilities <span aria-hidden="true" style="color:#E0A526">{{ accCapSign }}</span></button>
+      <sc-if value="{{ accCap }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;padding:4px 0 8px 16px;border-bottom:1px solid rgba(255,255,255,.12)">
+          <a href="#" style="min-height:44px;display:flex;align-items:center;color:#C5D0DC;text-decoration:none;font-size:16px">Cloud Modernization</a>
+          <a href="#" style="min-height:44px;display:flex;align-items:center;color:#C5D0DC;text-decoration:none;font-size:16px">Cybersecurity &amp; Zero Trust</a>
+          <a href="#" style="min-height:44px;display:flex;align-items:center;color:#C5D0DC;text-decoration:none;font-size:16px">Data &amp; Analytics</a>
+          <a href="#" style="min-height:44px;display:flex;align-items:center;color:#C5D0DC;text-decoration:none;font-size:16px">Digital Services</a>
+        </div>
+      </sc-if>
+      <a href="#" style="min-height:56px;display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.12);color:#fff;font-size:22px;font-weight:700;text-decoration:none">Contract Vehicles</a>
+      <a href="#" style="min-height:56px;display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.12);color:#fff;font-size:22px;font-weight:700;text-decoration:none">Past Performance</a>
+      <button aria-expanded="{{ accAbout }}" onClick="{{ toggleAccAbout }}" style="display:flex;justify-content:space-between;align-items:center;min-height:56px;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.12);color:#fff;font-size:22px;font-weight:700;text-align:left;padding:0;cursor:pointer">About <span aria-hidden="true" style="color:#E0A526">{{ accAboutSign }}</span></button>
+      <sc-if value="{{ accAbout }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;padding:4px 0 8px 16px;border-bottom:1px solid rgba(255,255,255,.12)">
+          <a href="#" style="min-height:44px;display:flex;align-items:center;color:#C5D0DC;text-decoration:none;font-size:16px">Company overview</a>
+          <a href="#" style="min-height:44px;display:flex;align-items:center;color:#C5D0DC;text-decoration:none;font-size:16px">Leadership</a>
+          <a href="#" style="min-height:44px;display:flex;align-items:center;color:#C5D0DC;text-decoration:none;font-size:16px">Certifications</a>
+          <a href="#" style="min-height:44px;display:flex;align-items:center;color:#C5D0DC;text-decoration:none;font-size:16px">Teaming Partners</a>
+        </div>
+      </sc-if>
+      <a href="#" style="min-height:56px;display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.12);color:#fff;font-size:22px;font-weight:700;text-decoration:none">Careers</a>
+      <a href="#" style="min-height:56px;display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.12);color:#fff;font-size:22px;font-weight:700;text-decoration:none">Insights</a>
+      <a href="#" style="margin-top:24px;min-height:52px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.4);border-radius:999px;color:#fff;font-weight:700;text-decoration:none;font-size:16px">Capability Statement (PDF)</a>
+    </nav>
+  </sc-if>
+</header>
+
+<main id="main">
+
+<section aria-labelledby="hero-h" style="position:relative;min-height:max(680px,100vh);display:flex;flex-direction:column;justify-content:flex-end;background:#0B2036;overflow:hidden;color:#fff">
+  <div data-parallax="0.25" style="position:absolute;inset:-8% 0 0 0;will-change:transform">
+    <img data-hero-img="1" src="images/pexels-5990271-w2000.jpg" alt="A Larkspan program lead running a planning session with her team" style="width:100%;height:100%;object-fit:cover;object-position:center 30%">
+  </div>
+  <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,32,54,.94) 0%,rgba(11,32,54,.78) 45%,rgba(11,32,54,.35) 100%),linear-gradient(0deg,rgba(11,32,54,.9) 0%,transparent 45%)"></div>
+  <div aria-hidden="true" style="position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:calc(100% / 12) 100%;pointer-events:none"></div>
+
+  <div style="position:relative;max-width:1392px;width:100%;margin:0 auto;padding:140px clamp(20px,3vw,48px) 0">
+    <div data-hero-fade="0" style="display:flex;align-items:center;gap:12px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#E0A526;margin-bottom:28px"><span style="width:40px;height:1px;background:#E0A526"></span>Woman-Owned Small Business · Reston, VA</div>
+    <h1 id="hero-h" style="font-size:clamp(46px,8.4vw,128px);line-height:.94;font-weight:800;letter-spacing:-.045em;color:#fff;max-width:1200px">
+      <span style="display:block;overflow:hidden;padding-bottom:.06em"><span data-hero-line="0" style="display:block">Mission-ready</span></span>
+      <span style="display:block;overflow:hidden;padding-bottom:.06em"><span data-hero-line="1" style="display:block">technology for</span></span>
+      <span style="display:block;overflow:hidden;padding-bottom:.06em"><span data-hero-line="2" style="display:block"><span style="color:#E0A526">federal</span> agencies.</span></span>
+    </h1>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:32px 64px;align-items:end;margin-top:clamp(32px,4vw,56px);padding-bottom:clamp(40px,5vw,64px)">
+      <p data-hero-fade="1" style="font-size:clamp(17px,1.4vw,20px);line-height:1.55;color:#DCE3EA;max-width:560px;text-wrap:pretty">Larkspan Federal helps civilian and defense agencies modernize legacy systems, secure mission data, and deliver digital services people can actually use.</p>
+      <div data-hero-fade="2" style="display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-start">
+        <a href="#capabilities" style="display:flex;align-items:center;gap:14px;min-height:58px;padding:0 10px 0 28px;background:#E0A526;color:#0F2A44;font-weight:700;font-size:16px;border-radius:999px;text-decoration:none;transition:transform .3s ease,background .3s ease" style-hover="background:#F0B93E;color:#0F2A44;transform:translateY(-3px)" style-focus="outline:3px solid #fff;outline-offset:3px">Explore Capabilities<span style="width:40px;height:40px;border-radius:999px;background:#0F2A44;color:#E0A526;display:flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m0 0L9 4m4 4-4 4" stroke="currentColor" stroke-width="1.6"></path></svg></span></a>
+        <a href="#" style="display:flex;align-items:center;gap:10px;min-height:58px;padding:0 26px;border:1px solid rgba(255,255,255,.55);color:#fff;font-weight:700;font-size:16px;border-radius:999px;text-decoration:none;transition:background .3s ease,color .3s ease" style-hover="background:#fff;color:#0F2A44" style-focus="outline:3px solid #E0A526;outline-offset:3px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2v8m0 0 3-3m-3 3L5 7M2.5 12.5h11" stroke="currentColor" stroke-width="1.6"></path></svg>Download Capability Statement</a>
+      </div>
+    </div>
+  </div>
+  <div data-hero-fade="3" style="position:relative;border-top:1px solid rgba(255,255,255,.18);background:rgba(11,32,54,.55);backdrop-filter:blur(8px)">
+    <div style="max-width:1392px;margin:0 auto;padding:20px clamp(20px,3vw,48px);display:flex;flex-wrap:wrap;gap:14px 40px;align-items:center;font-size:14px;font-weight:600;color:#fff">
+      <span style="display:flex;align-items:center;gap:10px"><span style="width:7px;height:7px;border-radius:99px;background:#E0A526"></span>Woman-Owned Small Business</span>
+      <span style="display:flex;align-items:center;gap:10px"><span style="width:7px;height:7px;border-radius:99px;background:#E0A526"></span>GSA MAS Contract Holder</span>
+      <span style="display:flex;align-items:center;gap:10px"><span style="width:7px;height:7px;border-radius:99px;background:#E0A526"></span>ISO 9001:2015</span>
+      <span style="display:flex;align-items:center;gap:10px"><span style="width:7px;height:7px;border-radius:99px;background:#E0A526"></span>CMMI-DEV Level 3</span>
+      <span style="margin-left:auto;display:flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-weight:400;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#C5D0DC">Scroll<span style="display:inline-block;animation:lk-bob 1.8s ease-in-out infinite">↓</span></span>
+    </div>
+  </div>
+</section>
+
+<div aria-hidden="true" style="background:#E0A526;color:#0F2A44;overflow:hidden;border-bottom:1px solid #0F2A44">
+  <div style="display:flex;width:max-content;animation:lk-marquee 38s linear infinite">
+    <div style="display:flex;align-items:center;gap:40px;padding:22px 20px;font-size:clamp(22px,2.4vw,34px);font-weight:800;letter-spacing:-.02em;white-space:nowrap">
+      <span>Cloud Modernization</span><span style="font-size:.6em">✦</span><span>Cybersecurity &amp; Zero Trust</span><span style="font-size:.6em">✦</span><span>Data &amp; Analytics</span><span style="font-size:.6em">✦</span><span>Digital Services</span><span style="font-size:.6em">✦</span><span>FedRAMP</span><span style="font-size:.6em">✦</span><span>NIST 800-53</span><span style="font-size:.6em">✦</span><span>Section 508</span><span style="font-size:.6em">✦</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:40px;padding:22px 20px;font-size:clamp(22px,2.4vw,34px);font-weight:800;letter-spacing:-.02em;white-space:nowrap">
+      <span>Cloud Modernization</span><span style="font-size:.6em">✦</span><span>Cybersecurity &amp; Zero Trust</span><span style="font-size:.6em">✦</span><span>Data &amp; Analytics</span><span style="font-size:.6em">✦</span><span>Digital Services</span><span style="font-size:.6em">✦</span><span>FedRAMP</span><span style="font-size:.6em">✦</span><span>NIST 800-53</span><span style="font-size:.6em">✦</span><span>Section 508</span><span style="font-size:.6em">✦</span>
+    </div>
+  </div>
+</div>
+
+<section aria-label="Company at a glance" style="background:#fff">
+  <div style="max-width:1392px;margin:0 auto;padding:clamp(80px,10vw,160px) clamp(20px,3vw,48px) clamp(64px,8vw,120px)">
+    <div style="display:flex;flex-wrap:wrap;gap:24px 32px">
+      <span data-reveal="" style="flex:1 1 200px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#4A5563;padding-top:14px">(01) Who we are</span>
+      <p data-scrub="" style="flex:3 1 520px;font-size:clamp(28px,3.6vw,54px);line-height:1.16;font-weight:700;letter-spacing:-.025em;color:#0F2A44;text-wrap:pretty">Larkspan Federal is a woman-owned small business in Reston, Virginia. For fifteen years we have helped agencies retire fragile legacy systems, defend mission data, and launch services the public can actually use.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));margin-top:clamp(64px,8vw,120px);border-top:2px solid #0F2A44">
+      <div data-reveal="" data-delay="0" style="padding:32px 24px 0 0;display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:clamp(56px,6.4vw,96px);line-height:.9;font-weight:800;color:#0F2A44;letter-spacing:-.05em"><span data-count="15">15</span><span style="color:#E0A526">+</span></span>
+        <span style="font-size:16px;line-height:24px;color:#4A5563;max-width:220px">years supporting federal missions</span>
+      </div>
+      <div data-reveal="" data-delay="100" style="padding:32px 24px 0 0;display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:clamp(56px,6.4vw,96px);line-height:.9;font-weight:800;color:#0F2A44;letter-spacing:-.05em"><span data-count="40">40</span><span style="color:#E0A526">+</span></span>
+        <span style="font-size:16px;line-height:24px;color:#4A5563;max-width:220px">active task orders</span>
+      </div>
+      <div data-reveal="" data-delay="200" style="padding:32px 24px 0 0;display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:clamp(56px,6.4vw,96px);line-height:.9;font-weight:800;color:#0F2A44;letter-spacing:-.05em"><span data-count="300">300</span><span style="color:#E0A526">+</span></span>
+        <span style="font-size:16px;line-height:24px;color:#4A5563;max-width:220px">cleared professionals</span>
+      </div>
+      <div data-reveal="" data-delay="300" style="padding:32px 24px 0 0;display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:clamp(56px,6.4vw,96px);line-height:.9;font-weight:800;color:#0F2A44;letter-spacing:-.05em"><span data-count="12">12</span></span>
+        <span style="font-size:16px;line-height:24px;color:#4A5563;max-width:220px">federal agencies served</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="capabilities" aria-labelledby="cap-h" style="background:#0F2A44;color:#fff;position:relative;overflow:hidden">
+  <div style="max-width:1392px;margin:0 auto;padding:clamp(80px,10vw,150px) clamp(20px,3vw,48px)">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:clamp(40px,5vw,72px)">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <span data-reveal="" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#E0A526">(02) Capabilities</span>
+        <h2 id="cap-h" data-reveal="" style="font-size:clamp(44px,6.4vw,96px);line-height:.95;font-weight:800;letter-spacing:-.045em">What we deliver</h2>
+      </div>
+      <a href="#" data-reveal="" style="display:flex;align-items:center;gap:10px;min-height:48px;color:#fff;font-weight:700;font-size:16px;text-decoration:none;border-bottom:1px solid #E0A526" style-hover="color:#E0A526" style-focus="outline:3px solid #E0A526;outline-offset:4px">All capabilities →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:clamp(32px,5vw,80px);align-items:start">
+      <div style="display:flex;flex-direction:column;border-top:1px solid rgba(255,255,255,.2)">
+        <div onMouseEnter="{{ cap0 }}" style="border-bottom:1px solid rgba(255,255,255,.2)">
+          <button onClick="{{ cap0 }}" onFocus="{{ cap0 }}" aria-expanded="{{ capA0 }}" style="width:100%;display:flex;align-items:baseline;gap:24px;padding:28px 0;background:transparent;border:0;cursor:pointer;text-align:left;color:{{ capC0 }};transition:color .4s ease" style-focus="outline:3px solid #E0A526;outline-offset:4px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:#E0A526;min-width:28px">01</span>
+            <span style="font-size:clamp(28px,3.2vw,46px);line-height:1.05;font-weight:800;letter-spacing:-.03em;flex:1">Cloud Modernization</span>
+            <span aria-hidden="true" style="font-size:28px;transform:rotate({{ capR0 }});transition:transform .4s ease">↗</span>
+          </button>
+          <div style="display:grid;grid-template-rows:{{ capG0 }};transition:grid-template-rows .5s ease">
+            <div style="overflow:hidden"><div style="padding:0 0 32px 52px;display:flex;flex-direction:column;gap:16px;max-width:560px">
+              <p style="font-size:18px;line-height:28px;color:#C5D0DC">Move legacy systems to secure, FedRAMP-authorized cloud environments without disrupting operations.</p>
+              <div style="display:flex;flex-wrap:wrap;gap:8px"><span style="font-size:13px;padding:6px 12px;border:1px solid rgba(255,255,255,.25);border-radius:99px;color:#fff">AWS GovCloud</span><span style="font-size:13px;padding:6px 12px;border:1px solid rgba(255,255,255,.25);border-radius:99px;color:#fff">Azure Government</span><span style="font-size:13px;padding:6px 12px;border:1px solid rgba(255,255,255,.25);border-radius:99px;color:#fff">FedRAMP High</span></div>
+              <a href="#" style="color:#E0A526;font-weight:700;font-size:16px;min-height:44px;display:flex;align-items:center" style-focus="outline:3px solid #E0A526">Learn more about Cloud Modernization</a>
+            </div></div>
+          </div>
+        </div>
+        <div onMouseEnter="{{ cap1 }}" style="border-bottom:1px solid rgba(255,255,255,.2)">
+          <button onClick="{{ cap1 }}" onFocus="{{ cap1 }}" aria-expanded="{{ capA1 }}" style="width:100%;display:flex;align-items:baseline;gap:24px;padding:28px 0;background:transparent;border:0;cursor:pointer;text-align:left;color:{{ capC1 }};transition:color .4s ease" style-focus="outline:3px solid #E0A526;outline-offset:4px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:#E0A526;min-width:28px">02</span>
+            <span style="font-size:clamp(28px,3.2vw,46px);line-height:1.05;font-weight:800;letter-spacing:-.03em;flex:1">Cybersecurity &amp; Zero Trust</span>
+            <span aria-hidden="true" style="font-size:28px;transform:rotate({{ capR1 }});transition:transform .4s ease">↗</span>
+          </button>
+          <div style="display:grid;grid-template-rows:{{ capG1 }};transition:grid-template-rows .5s ease">
+            <div style="overflow:hidden"><div style="padding:0 0 32px 52px;display:flex;flex-direction:column;gap:16px;max-width:560px">
+              <p style="font-size:18px;line-height:28px;color:#C5D0DC">Protect mission data with continuous monitoring, ATO support, and Zero Trust architecture.</p>
+              <div style="display:flex;flex-wrap:wrap;gap:8px"><span style="font-size:13px;padding:6px 12px;border:1px solid rgba(255,255,255,.25);border-radius:99px;color:#fff">NIST SP 800-53 Rev. 5</span><span style="font-size:13px;padding:6px 12px;border:1px solid rgba(255,255,255,.25);border-radius:99px;color:#fff">RMF &amp; ATO</span><span style="font-size:13px;padding:6px 12px;border:1px solid rgba(255,255,255,.25);border-radius:99px;color:#fff">CMMC 2.0</span></div>
+              <a href="#" style="color:#E0A526;font-weight:700;font-size:16px;min-height:44px;display:flex;align-items:center" style-focus="outline:3px solid #E0A526">Learn more about Cybersecurity &amp; Zero Trust</a>
+            </div></div>
+          </div>
+        </div>
+        <div onMouseEnter="{{ cap2 }}" style="border-bottom:1px solid rgba(255,255,255,.2)">
+          <button onClick="{{ cap2 }}" onFocus="{{ cap2 }}" aria-expanded="{{ capA2 }}" style="width:100%;display:flex;align-items:baseline;gap:24px;padding:28px 0;background:transparent;border:0;cursor:pointer;text-align:left;color:{{ capC2 }};transition:color .4s ease" style-focus="outline:3px solid #E0A526;outline-offset:4px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:#E0A526;min-width:28px">03</span>
+            <span style="font-size:clamp(28px,3.2vw,46px);line-height:1.05;font-weight:800;letter-spacing:-.03em;flex:1">Data &amp; Analytics</span>
+            <span aria-hidden="true" style="font-size:28px;transform:rotate({{ capR2 }});transition:transform .4s ease">↗</span>
+          </button>
+          <div style="display:grid;grid-template-rows:{{ capG2 }};transition:grid-template-rows .5s ease">
+            <div style="overflow:hidden"><div style="padding:0 0 32px 52px;display:flex;flex-direction:column;gap:16px;max-width:560px">
+              <p style="font-size:18px;line-height:28px;color:#C5D0DC">Turn agency data into faster, better-informed decisions.</p>
+              <div style="display:flex;flex-wrap:wrap;gap:8px"><span style="font-size:13px;padding:6px 12px;border:1px solid rgba(255,255,255,.25);border-radius:99px;color:#fff">Data platforms</span><span style="font-size:13px;padding:6px 12px;border:1px solid rgba(255,255,255,.25);border-radius:99px;color:#fff">Dashboards</span><span style="font-size:13px;padding:6px 12px;border:1px solid rgba(255,255,255,.25);border-radius:99px;color:#fff">Evidence Act reporting</span></div>
+              <a href="#" style="color:#E0A526;font-weight:700;font-size:16px;min-height:44px;display:flex;align-items:center" style-focus="outline:3px solid #E0A526">Learn more about Data &amp; Analytics</a>
+            </div></div>
+          </div>
+        </div>
+        <div onMouseEnter="{{ cap3 }}" style="border-bottom:1px solid rgba(255,255,255,.2)">
+          <button onClick="{{ cap3 }}" onFocus="{{ cap3 }}" aria-expanded="{{ capA3 }}" style="width:100%;display:flex;align-items:baseline;gap:24px;padding:28px 0;background:transparent;border:0;cursor:pointer;text-align:left;color:{{ capC3 }};transition:color .4s ease" style-focus="outline:3px solid #E0A526;outline-offset:4px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:#E0A526;min-width:28px">04</span>
+            <span style="font-size:clamp(28px,3.2vw,46px);line-height:1.05;font-weight:800;letter-spacing:-.03em;flex:1">Digital Services</span>
+            <span aria-hidden="true" style="font-size:28px;transform:rotate({{ capR3 }});transition:transform .4s ease">↗</span>
+          </button>
+          <div style="display:grid;grid-template-rows:{{ capG3 }};transition:grid-template-rows .5s ease">
+            <div style="overflow:hidden"><div style="padding:0 0 32px 52px;display:flex;flex-direction:column;gap:16px;max-width:560px">
+              <p style="font-size:18px;line-height:28px;color:#C5D0DC">Design and build accessible, Section 508 compliant websites and applications.</p>
+              <div style="display:flex;flex-wrap:wrap;gap:8px"><span style="font-size:13px;padding:6px 12px;border:1px solid rgba(255,255,255,.25);border-radius:99px;color:#fff">USWDS</span><span style="font-size:13px;padding:6px 12px;border:1px solid rgba(255,255,255,.25);border-radius:99px;color:#fff">WCAG 2.1 AA</span><span style="font-size:13px;padding:6px 12px;border:1px solid rgba(255,255,255,.25);border-radius:99px;color:#fff">21st Century IDEA</span></div>
+              <a href="#" style="color:#E0A526;font-weight:700;font-size:16px;min-height:44px;display:flex;align-items:center" style-focus="outline:3px solid #E0A526">Learn more about Digital Services</a>
+            </div></div>
+          </div>
+        </div>
+      </div>
+      <div data-reveal="" style="position:{{ capPos }};top:110px;aspect-ratio:{{ capAR }};max-height:80vh;width:100%;border-radius:8px;overflow:hidden;background:#0B2036">
+        <img src="images/pexels-1181354-w1400.jpg" alt="Engineer reviewing cloud infrastructure in a data center" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:{{ capO0 }};transform:scale({{ capS0 }});transition:opacity .7s ease,transform 1.2s cubic-bezier(.2,.7,.2,1)">
+        <img src="images/pexels-5380792-w1400.jpg" alt="Security monitoring dashboards" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:{{ capO1 }};transform:scale({{ capS1 }});transition:opacity .7s ease,transform 1.2s cubic-bezier(.2,.7,.2,1)">
+        <img src="images/pexels-39190576-w1400.jpg" alt="Team reviewing an analytics presentation" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:{{ capO2 }};transform:scale({{ capS2 }});transition:opacity .7s ease,transform 1.2s cubic-bezier(.2,.7,.2,1)">
+        <img src="images/pexels-3471423-w1400.jpg" alt="Designer sketching an app prototype" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:{{ capO3 }};transform:scale({{ capS3 }});transition:opacity .7s ease,transform 1.2s cubic-bezier(.2,.7,.2,1)">
+        <div style="position:absolute;left:20px;bottom:20px;display:flex;align-items:center;gap:10px;background:#E0A526;color:#0F2A44;padding:10px 16px;border-radius:99px;font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500">{{ capLabel }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="pp-h" style="background:#F4F6F8">
+  <div style="max-width:1392px;margin:0 auto;padding:clamp(80px,10vw,150px) clamp(20px,3vw,48px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px 64px;align-items:end;margin-bottom:clamp(40px,5vw,72px)">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <span data-reveal="" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#4A5563">(03) Past performance</span>
+        <h2 id="pp-h" data-reveal="" style="font-size:clamp(44px,6.4vw,96px);line-height:.95;font-weight:800;letter-spacing:-.045em;color:#0F2A44">Proven on<br>the mission</h2>
+      </div>
+      <div data-reveal="" style="display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+        <p style="font-size:18px;line-height:28px;color:#4A5563;max-width:460px">Agency names are withheld at our clients' request. Full references are available to contracting officers on request.</p>
+        <a href="#" style="display:flex;align-items:center;gap:10px;min-height:48px;font-weight:700;font-size:16px;text-decoration:none;border-bottom:1px solid #0F2A44" style-focus="outline:3px solid #E0A526;outline-offset:4px">View all case studies →</a>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:{{ ppCols }};gap:24px">
+      <a href="#" data-reveal="" data-delay="0" style="position:relative;border-radius:8px;overflow:hidden;min-height:620px;display:flex;flex-direction:column;text-decoration:none;color:#fff;background:#0B2036" style-focus="outline:3px solid #E0A526;outline-offset:3px">
+        <img src="images/pexels-7698802-w1600.jpg" alt="Claims modernization team reviewing data" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.06)">
+        <span style="position:relative;margin-top:auto;padding:96px clamp(24px,3vw,40px) clamp(24px,3vw,40px);background:linear-gradient(180deg,rgba(11,32,54,0) 0,rgba(11,32,54,.97) 88px,#0B2036 100%);display:flex;flex-direction:column;gap:16px;pointer-events:none">
+          <span style="display:flex;flex-wrap:wrap;gap:8px;font-size:13px;font-weight:600"><span style="padding:6px 12px;border-radius:99px;background:#1A3A5A;color:#fff">Federal civilian agency</span><span style="padding:6px 12px;border-radius:99px;background:#1A3A5A;color:#fff">Cloud Modernization</span></span>
+          <span style="font-size:clamp(26px,2.6vw,38px);line-height:1.1;font-weight:800;letter-spacing:-.025em;max-width:560px;text-wrap:pretty">Modernizing a benefits claims platform for a federal civilian agency</span>
+          <span style="display:flex;align-items:baseline;gap:14px;border-top:1px solid rgba(255,255,255,.25);padding-top:18px"><span style="font-size:clamp(56px,6vw,88px);line-height:.9;font-weight:800;color:#E0A526;letter-spacing:-.05em">35%</span><span style="font-size:16px;line-height:23px;color:#DCE3EA">faster claim processing<br>GSA MAS · 2021–2025</span></span>
+        </span>
+      </a>
+      <div style="display:flex;flex-direction:column;gap:24px">
+      <a href="#" data-reveal="" data-delay="120" style="position:relative;border-radius:8px;overflow:hidden;flex:1;display:flex;flex-direction:column;text-decoration:none;color:#fff;background:#0B2036" style-focus="outline:3px solid #E0A526;outline-offset:3px">
+        <span style="position:relative;display:block;height:clamp(160px,16vw,220px);flex-shrink:0;overflow:hidden"><img src="images/pexels-37605911-w1200.jpg" alt="Network engineer configuring endpoint security" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.06)"></span>
+        <span style="position:relative;flex:1;padding:24px 28px 28px;background:#0B2036;display:flex;flex-direction:column;gap:16px;pointer-events:none">
+          <span style="display:flex;flex-wrap:wrap;gap:8px;font-size:13px;font-weight:600"><span style="padding:6px 12px;border-radius:99px;background:#1A3A5A;color:#fff">Defense organization</span><span style="padding:6px 12px;border-radius:99px;background:#1A3A5A;color:#fff">Zero Trust</span></span>
+          <span style="font-size:22px;line-height:1.2;font-weight:800;letter-spacing:-.02em;text-wrap:pretty">Zero Trust rollout across 20,000 endpoints for a defense organization</span>
+          <span style="display:flex;align-items:baseline;gap:12px;border-top:1px solid rgba(255,255,255,.25);padding-top:14px"><span style="font-size:40px;line-height:.9;font-weight:800;color:#E0A526;letter-spacing:-.04em">20K</span><span style="font-size:15px;line-height:21px;color:#DCE3EA">endpoints moved to Zero Trust access</span></span>
+        </span>
+      </a>
+      <a href="#" data-reveal="" data-delay="240" style="position:relative;border-radius:8px;overflow:hidden;flex:1;display:flex;flex-direction:column;text-decoration:none;color:#fff;background:#0B2036" style-focus="outline:3px solid #E0A526;outline-offset:3px">
+        <span style="position:relative;display:block;height:clamp(160px,16vw,220px);flex-shrink:0;overflow:hidden"><img src="images/pexels-196645-w1200.jpg" alt="Wireframe sketches for an accessible public website" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.06)"></span>
+        <span style="position:relative;flex:1;padding:24px 28px 28px;background:#0B2036;display:flex;flex-direction:column;gap:16px;pointer-events:none">
+          <span style="display:flex;flex-wrap:wrap;gap:8px;font-size:13px;font-weight:600"><span style="padding:6px 12px;border-radius:99px;background:#1A3A5A;color:#fff">Federal health program</span><span style="padding:6px 12px;border-radius:99px;background:#1A3A5A;color:#fff">Digital Services</span></span>
+          <span style="font-size:22px;line-height:1.2;font-weight:800;letter-spacing:-.02em;text-wrap:pretty">A Section 508 compliant public website for a federal health program</span>
+          <span style="display:flex;align-items:baseline;gap:12px;border-top:1px solid rgba(255,255,255,.25);padding-top:14px"><span style="font-size:40px;line-height:.9;font-weight:800;color:#E0A526;letter-spacing:-.04em">100%</span><span style="font-size:15px;line-height:21px;color:#DCE3EA">WCAG 2.1 AA conformance at launch</span></span>
+        </span>
+      </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="buy-h" style="background:#fff">
+  <div style="max-width:1392px;margin:0 auto;padding:clamp(80px,10vw,150px) clamp(20px,3vw,48px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:clamp(40px,6vw,96px);align-items:center">
+    <div data-reveal="" style="position:relative;border-radius:8px;overflow:hidden;aspect-ratio:4/5;background:#0F2A44">
+      <div data-parallax="0.12" style="position:absolute;inset:-10% 0;will-change:transform"><img src="images/pexels-9034755-w1400.jpg" alt="Larkspan capture lead briefing a contracting team" style="width:100%;height:100%;object-fit:cover"></div>
+      <div style="position:absolute;left:24px;right:24px;bottom:24px;background:#0F2A44;color:#fff;border-radius:6px;padding:24px;display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap">
+        <span style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#C5D0DC">Size status</span><span style="font-size:20px;font-weight:800">Small · WOSB</span></span>
+        <a href="#" style="display:flex;align-items:center;min-height:46px;padding:0 20px;background:#E0A526;color:#0F2A44;font-weight:700;border-radius:99px;text-decoration:none;font-size:15px" style-hover="background:#F0B93E;color:#0F2A44" style-focus="outline:3px solid #fff;outline-offset:2px">Capability Statement ↓</a>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <span data-reveal="" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#4A5563">(04) How to buy</span>
+      <h2 id="buy-h" data-reveal="" style="font-size:clamp(44px,5.6vw,84px);line-height:.95;font-weight:800;letter-spacing:-.045em;color:#0F2A44">Easy to buy,<br><span style="color:#E0A526;-webkit-text-stroke:0">ready</span> to start</h2>
+      <dl data-reveal="" style="display:flex;flex-direction:column;border-top:2px solid #0F2A44">
+        <div style="display:grid;grid-template-columns:minmax(120px,1fr) minmax(0,2.2fr);gap:16px;padding:18px 0;border-bottom:1px solid #DDE2E8">
+          <dt style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#4A5563;padding-top:3px">Vehicle</dt>
+          <dd style="font-size:18px;line-height:26px;font-weight:700;color:#0F2A44">GSA Multiple Award Schedule (MAS)<span style="display:block;font-size:15px;font-weight:400;color:#4A5563;margin-top:4px">SINs 54151S IT Professional Services · 518210C Cloud Computing · 54151HACS Highly Adaptive Cybersecurity Services</span></dd>
+        </div>
+        <div style="display:grid;grid-template-columns:minmax(120px,1fr) minmax(0,2.2fr);gap:16px;padding:18px 0;border-bottom:1px solid #DDE2E8">
+          <dt style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#4A5563;padding-top:3px">Set-aside</dt>
+          <dd style="font-size:18px;line-height:26px;font-weight:700;color:#0F2A44">WOSB set-aside eligible</dd>
+        </div>
+        <div style="display:grid;grid-template-columns:minmax(120px,1fr) minmax(0,2.2fr);gap:16px;padding:18px 0;border-bottom:1px solid #DDE2E8">
+          <dt style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#4A5563;padding-top:3px">NAICS</dt>
+          <dd style="display:flex;flex-wrap:wrap;gap:8px">
+            <span title="Custom Computer Programming Services" style="font-size:15px;font-weight:700;color:#0F2A44;padding:7px 14px;border:1px solid #0F2A44;border-radius:99px;font-variant-numeric:tabular-nums;transition:background .25s,color .25s;cursor:default" style-hover="background:#0F2A44;color:#fff">541511</span>
+            <span title="Computer Systems Design Services" style="font-size:15px;font-weight:700;color:#0F2A44;padding:7px 14px;border:1px solid #0F2A44;border-radius:99px;font-variant-numeric:tabular-nums;transition:background .25s,color .25s;cursor:default" style-hover="background:#0F2A44;color:#fff">541512</span>
+            <span title="Other Computer Related Services" style="font-size:15px;font-weight:700;color:#0F2A44;padding:7px 14px;border:1px solid #0F2A44;border-radius:99px;font-variant-numeric:tabular-nums;transition:background .25s,color .25s;cursor:default" style-hover="background:#0F2A44;color:#fff">541519</span>
+            <span title="Administrative Management Consulting Services" style="font-size:15px;font-weight:700;color:#0F2A44;padding:7px 14px;border:1px solid #0F2A44;border-radius:99px;font-variant-numeric:tabular-nums;transition:background .25s,color .25s;cursor:default" style-hover="background:#0F2A44;color:#fff">541611</span>
+          </dd>
+        </div>
+        <div style="display:grid;grid-template-columns:minmax(120px,1fr) minmax(0,2.2fr);gap:16px;padding:18px 0;border-bottom:1px solid #DDE2E8">
+          <dt style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#4A5563;padding-top:3px">UEI / CAGE</dt>
+          <dd style="font-size:18px;line-height:26px;font-weight:700;color:#0F2A44;font-family:'IBM Plex Mono',monospace;letter-spacing:.02em">LK7S2PFD9XA3 / 9LKS1</dd>
+        </div>
+      </dl>
+      <a href="#" data-reveal="" style="align-self:flex-start;display:flex;align-items:center;gap:14px;min-height:58px;padding:0 10px 0 28px;background:#0F2A44;color:#fff;font-weight:700;font-size:16px;border-radius:999px;text-decoration:none;transition:transform .3s ease" style-hover="transform:translateY(-3px);color:#fff" style-focus="outline:3px solid #E0A526;outline-offset:3px">View contract vehicles<span style="width:40px;height:40px;border-radius:999px;background:#E0A526;color:#0F2A44;display:flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m0 0L9 4m4 4-4 4" stroke="currentColor" stroke-width="1.6"></path></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="why-h" style="background:#0B2036;color:#fff">
+  <div style="max-width:1392px;margin:0 auto;padding:clamp(80px,10vw,150px) clamp(20px,3vw,48px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:clamp(40px,6vw,96px);align-items:start">
+    <div style="position:sticky;top:120px;display:flex;flex-direction:column;gap:28px">
+      <span data-reveal="" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#E0A526">(05) Why Larkspan</span>
+      <h2 id="why-h" data-reveal="" style="font-size:clamp(44px,5.6vw,84px);line-height:.95;font-weight:800;letter-spacing:-.045em">Small team.<br>Mission scale.</h2>
+      <div data-reveal="" style="border-radius:8px;overflow:hidden;aspect-ratio:16/11">
+        <img src="images/pexels-8554281-w1200.jpg" alt="Larkspan delivery lead presenting at a whiteboard" style="width:100%;height:100%;object-fit:cover;object-position:center 25%">
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column">
+      <div data-reveal="" style="padding:clamp(32px,4vw,56px) 0;border-top:1px solid rgba(255,255,255,.2);display:flex;flex-direction:column;gap:18px">
+        <span style="font-size:clamp(72px,9vw,140px);line-height:.8;font-weight:900;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1.5px #E0A526">01</span>
+        <h3 style="font-size:clamp(28px,2.8vw,40px);line-height:1.1;font-weight:800;letter-spacing:-.025em">Mission first</h3>
+        <p style="font-size:19px;line-height:30px;color:#C5D0DC;max-width:480px">We measure success by agency outcomes, not hours billed.</p>
+      </div>
+      <div data-reveal="" style="padding:clamp(32px,4vw,56px) 0;border-top:1px solid rgba(255,255,255,.2);display:flex;flex-direction:column;gap:18px">
+        <span style="font-size:clamp(72px,9vw,140px);line-height:.8;font-weight:900;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1.5px #E0A526">02</span>
+        <h3 style="font-size:clamp(28px,2.8vw,40px);line-height:1.1;font-weight:800;letter-spacing:-.025em">Cleared and ready</h3>
+        <p style="font-size:19px;line-height:30px;color:#C5D0DC;max-width:480px">Our teams hold the clearances your program requires.</p>
+      </div>
+      <div data-reveal="" style="padding:clamp(32px,4vw,56px) 0;border-top:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2);display:flex;flex-direction:column;gap:18px">
+        <span style="font-size:clamp(72px,9vw,140px);line-height:.8;font-weight:900;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1.5px #E0A526">03</span>
+        <h3 style="font-size:clamp(28px,2.8vw,40px);line-height:1.1;font-weight:800;letter-spacing:-.025em">Accessible by default</h3>
+        <p style="font-size:19px;line-height:30px;color:#C5D0DC;max-width:480px">Every product we ship meets Section 508 and WCAG 2.1 AA.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="ins-h" style="background:#fff">
+  <div style="max-width:1392px;margin:0 auto;padding:clamp(80px,10vw,150px) clamp(20px,3vw,48px)">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:clamp(40px,5vw,64px)">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <span data-reveal="" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#4A5563">(06) Insights</span>
+        <h2 id="ins-h" data-reveal="" style="font-size:clamp(44px,6.4vw,96px);line-height:.95;font-weight:800;letter-spacing:-.045em;color:#0F2A44">Field notes</h2>
+      </div>
+      <a href="#" data-reveal="" style="display:flex;align-items:center;gap:10px;min-height:48px;font-weight:700;font-size:16px;text-decoration:none;border-bottom:1px solid #0F2A44" style-focus="outline:3px solid #E0A526;outline-offset:4px">All insights →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(24px,3vw,40px)">
+      <a href="#" data-reveal="" data-delay="0" style="display:flex;flex-direction:column;gap:20px;text-decoration:none" style-focus="outline:3px solid #E0A526;outline-offset:4px">
+        <span style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#F4F6F8"><img src="images/pexels-6476261-w1000.jpg" alt="" style="width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.07)"></span>
+        <span style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#4A5563"><span>Cybersecurity</span><span>Nov 3, 2026</span></span>
+        <span style="font-size:24px;line-height:1.2;font-weight:800;letter-spacing:-.02em;color:#0F2A44;text-wrap:pretty">What OMB M-22-09 still asks of agency Zero Trust programs</span>
+        <span style="font-weight:700;font-size:15px;color:#0F2A44;text-decoration:underline;text-decoration-color:#E0A526;text-underline-offset:5px;text-decoration-thickness:2px">Read article</span>
+      </a>
+      <a href="#" data-reveal="" data-delay="120" style="display:flex;flex-direction:column;gap:20px;text-decoration:none" style-focus="outline:3px solid #E0A526;outline-offset:4px">
+        <span style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#F4F6F8"><img src="images/pexels-1181335-w1000.jpg" alt="" style="width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.07)"></span>
+        <span style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#4A5563"><span>Cloud</span><span>Oct 20, 2026</span></span>
+        <span style="font-size:24px;line-height:1.2;font-weight:800;letter-spacing:-.02em;color:#0F2A44;text-wrap:pretty">FedRAMP 20x and what it changes for cloud authorizations</span>
+        <span style="font-weight:700;font-size:15px;color:#0F2A44;text-decoration:underline;text-decoration-color:#E0A526;text-underline-offset:5px;text-decoration-thickness:2px">Read article</span>
+      </a>
+      <a href="#" data-reveal="" data-delay="240" style="display:flex;flex-direction:column;gap:20px;text-decoration:none" style-focus="outline:3px solid #E0A526;outline-offset:4px">
+        <span style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#F4F6F8"><img src="images/pexels-7693733-w1000.jpg" alt="" style="width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.07)"></span>
+        <span style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#4A5563"><span>Digital Services</span><span>Oct 6, 2026</span></span>
+        <span style="font-size:24px;line-height:1.2;font-weight:800;letter-spacing:-.02em;color:#0F2A44;text-wrap:pretty">Getting public websites ready for the ADA Title II WCAG 2.1 AA rule</span>
+        <span style="font-weight:700;font-size:15px;color:#0F2A44;text-decoration:underline;text-decoration-color:#E0A526;text-underline-offset:5px;text-decoration-thickness:2px">Read article</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="car-h" style="position:relative;min-height:max(560px,86vh);display:flex;align-items:flex-end;overflow:hidden;background:#0B2036;color:#fff">
+  <div data-parallax="0.2" style="position:absolute;inset:-12% 0;will-change:transform"><img src="images/pexels-3184374-w2000.jpg" alt="Larkspan employees collaborating in a team meeting" style="width:100%;height:100%;object-fit:cover"></div>
+  <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,32,54,.96) 0%,rgba(11,32,54,.55) 55%,rgba(11,32,54,.2) 100%)"></div>
+  <div style="position:relative;max-width:1392px;width:100%;margin:0 auto;padding:clamp(64px,8vw,120px) clamp(20px,3vw,48px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:32px 64px;align-items:end">
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <span data-reveal="" style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#E0A526">(07) Careers</span>
+      <h2 id="car-h" data-reveal="" style="font-size:clamp(44px,6.4vw,104px);line-height:.94;font-weight:800;letter-spacing:-.045em;text-wrap:balance">Build a career that serves the mission.</h2>
+    </div>
+    <div data-reveal="" style="display:flex;flex-direction:column;gap:24px;align-items:flex-start">
+      <p style="font-size:19px;line-height:30px;color:#DCE3EA;max-width:440px">We sponsor clearances for eligible roles. Hybrid schedules in Reston, plus remote roles nationwide.</p>
+      <a href="#" style="display:flex;align-items:center;gap:14px;min-height:58px;padding:0 10px 0 28px;background:#E0A526;color:#0F2A44;font-weight:700;font-size:16px;border-radius:999px;text-decoration:none;transition:transform .3s ease,background .3s ease" style-hover="background:#F0B93E;color:#0F2A44;transform:translateY(-3px)" style-focus="outline:3px solid #fff;outline-offset:3px">View open positions<span style="width:40px;height:40px;border-radius:999px;background:#0F2A44;color:#E0A526;display:flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m0 0L9 4m4 4-4 4" stroke="currentColor" stroke-width="1.6"></path></svg></span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer style="background:#0F2A44;color:#C5D0DC;overflow:hidden">
+  <div style="max-width:1392px;margin:0 auto;padding:clamp(64px,8vw,104px) clamp(20px,3vw,48px) 28px;display:flex;flex-direction:column;gap:56px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:40px">
+      <div style="display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+        <p style="font-size:26px;line-height:1.2;font-weight:800;letter-spacing:-.02em;color:#fff;max-width:300px">Let's talk about your mission.</p>
+        <a href="#" style="display:flex;align-items:center;min-height:48px;padding:0 22px;background:#E0A526;color:#0F2A44;font-weight:700;border-radius:99px;text-decoration:none" style-hover="background:#F0B93E;color:#0F2A44" style-focus="outline:3px solid #fff;outline-offset:2px">Contact Us</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:15px;line-height:24px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#E0A526;margin-bottom:6px">Office</span>
+        <span>1900 Campus Commons Drive, Suite 300<br>Reston, VA 20191</span>
+        <a href="tel:+17035550142" style="color:#fff" style-hover="color:#E0A526">(703) 555-0142</a>
+        <a href="mailto:bd@larkspanfederal.com" style="color:#fff" style-hover="color:#E0A526">bd@larkspanfederal.com</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:15px;line-height:24px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#E0A526;margin-bottom:6px">Company data</span>
+        <span>UEI: LK7S2PFD9XA3</span>
+        <span>CAGE: 9LKS1</span>
+        <span>NAICS: 541511, 541512, 541519, 541611</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:15px;line-height:24px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#E0A526;margin-bottom:6px">Resources</span>
+        <a href="#" style="color:#fff" style-hover="color:#E0A526">Capability Statement (PDF)</a>
+        <a href="#" style="color:#fff" style-hover="color:#E0A526">Contract Vehicles</a>
+        <a href="#" style="color:#fff" style-hover="color:#E0A526">Teaming Partners</a>
+        <a href="#" style="color:#fff" style-hover="color:#E0A526">LinkedIn</a>
+      </div>
+    </div>
+    <div aria-hidden="true" data-reveal="" style="font-size:clamp(80px,19vw,300px);line-height:.8;font-weight:900;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.28);white-space:nowrap;margin:0 -.04em">Larkspan</div>
+    <div style="border-top:1px solid rgba(255,255,255,.14);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:14px;line-height:20px">
+      <span>© 2026 Larkspan Federal Solutions. Concept Project by Abdul Rozzaq.</span>
+      <nav aria-label="Footer" style="display:flex;flex-wrap:wrap;gap:8px 24px">
+        <a href="#" style="color:#C5D0DC" style-hover="color:#fff">Accessibility Statement</a>
+        <a href="#" style="color:#C5D0DC" style-hover="color:#fff">Privacy Policy</a>
+        <a href="#" style="color:#C5D0DC" style-hover="color:#fff">Sitemap</a>
+        <a href="#" style="color:#C5D0DC" style-hover="color:#fff">LinkedIn</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;motion&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Behavior&quot;},&quot;preloader&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Behavior&quot;}}">
+class Component extends DCLogic {
+  state = { menu: null, mobileOpen: false, accCap: false, accAbout: false, cap: 0, scrolled: false, w: typeof window !== 'undefined' ? window.innerWidth : 1440 };
+  headerRef = React.createRef();
+  componentDidMount() {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const anim = this.props.motion ?? true;
+    this.onResize = () => this.setState({ w: window.innerWidth });
+    this.onDown = (e) => { if (this.state.menu && this.headerRef.current && !this.headerRef.current.contains(e.target)) this.setState({ menu: null }); };
+    this.onKey = (e) => { if (e.key === 'Escape') this.setState({ menu: null, mobileOpen: false }); };
+    window.addEventListener('resize', this.onResize);
+    document.addEventListener('mousedown', this.onDown);
+    document.addEventListener('keydown', this.onKey);
+    const ease = 'cubic-bezier(.2,.7,.2,1)';
+    // scrub text: split into words
+    this.scrubWords = [];
+    document.querySelectorAll('[data-scrub]').forEach(p => {
+      if (p.dataset.split) return; p.dataset.split = '1';
+      const words = p.textContent.trim().split(/\s+/);
+      p.textContent = '';
+      words.forEach((w, i) => { const s = document.createElement('span'); s.textContent = w + (i < words.length - 1 ? ' ' : ''); s.style.transition = 'opacity .3s ease'; p.appendChild(s); });
+      this.scrubWords.push(p);
+    });
+    const pre = (this.props.preloader ?? true) && !reduce && anim;
+    const D = pre ? 2350 : 0;
+    if (pre) {
+      const q = (k) => document.querySelector(`[data-pre="${k}"]`);
+      document.documentElement.style.overflow = 'hidden';
+      ['l1', 'l2', 'l3'].forEach((k, i) => q(k) && q(k).animate([{ transform: 'translateY(110%)' }, { transform: 'none' }], { duration: 900, delay: 100 + i * 110, easing: ease, fill: 'both' }));
+      q('top') && q('top').animate([{ opacity: 0 }, { opacity: 1 }], { duration: 600, fill: 'both' });
+      q('bar') && q('bar').animate([{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }], { duration: 1700, delay: 150, easing: 'cubic-bezier(.6,.05,.3,1)', fill: 'both' });
+      const c = q('count'), t0 = performance.now();
+      const tick = (t) => { const k = Math.min(1, Math.max(0, (t - t0 - 150) / 1700)); const e = k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2; if (c) c.textContent = Math.round(e * 100); if (k < 1) requestAnimationFrame(tick); };
+      requestAnimationFrame(tick);
+      const root = q('root');
+      setTimeout(() => {
+        ['l1', 'l2', 'l3'].forEach((k, i) => q(k) && q(k).animate([{ transform: 'none' }, { transform: 'translateY(-110%)' }], { duration: 600, delay: i * 60, easing: 'cubic-bezier(.7,0,.3,1)', fill: 'forwards' }));
+        root && root.animate([{ clipPath: 'inset(0 0 0 0)' }, { clipPath: 'inset(0 0 100% 0)' }], { duration: 900, delay: 350, easing: 'cubic-bezier(.8,0,.2,1)', fill: 'forwards' });
+      }, 1950);
+      setTimeout(() => { document.documentElement.style.overflow = ''; this.setState({ preDone: true }); }, 3300);
+    } else {
+      this.setState({ preDone: true });
+    }
+    if (!reduce && anim) {
+      document.querySelectorAll('[data-hero-line]').forEach((el, i) => el.animate([{ transform: 'translateY(105%)' }, { transform: 'none' }], { duration: 1100, delay: D + 150 + i * 120, easing: ease, fill: 'both' }));
+      document.querySelectorAll('[data-hero-fade]').forEach(el => el.animate([{ opacity: 0, transform: 'translateY(24px)' }, { opacity: 1, transform: 'none' }], { duration: 900, delay: D + 550 + (+el.dataset.heroFade) * 120, easing: ease, fill: 'both' }));
+      document.querySelectorAll('[data-hero-img]').forEach(el => el.animate([{ transform: 'scale(1.15)' }, { transform: 'scale(1)' }], { duration: 2200, delay: D, easing: ease, fill: 'both' }));
+      const vh = window.innerHeight;
+      const io = new IntersectionObserver((ents) => ents.forEach(en => {
+        if (!en.isIntersecting) return;
+        const el = en.target; io.unobserve(el);
+        el.animate([{ opacity: 0, transform: 'translateY(48px)' }, { opacity: 1, transform: 'none' }], { duration: 1000, delay: +(el.dataset.delay || 0), easing: ease, fill: 'both' });
+        el.querySelectorAll('[data-count]').forEach(c => this.countUp(c));
+      }), { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('[data-reveal]').forEach(el => {
+        if (el.getBoundingClientRect().top < vh) { el.querySelectorAll('[data-count]').forEach(c => this.countUp(c)); return; }
+        el.animate([{ opacity: 0 }, { opacity: 0 }], { duration: 1, fill: 'forwards' });
+        io.observe(el);
+      });
+      this.io = io;
+    }
+    this.parallax = [...document.querySelectorAll('[data-parallax]')];
+    this.onScroll = () => {
+      const y = window.scrollY, vh = window.innerHeight;
+      if ((y > 40) !== this.state.scrolled) this.setState({ scrolled: y > 40 });
+      if (!reduce && anim) this.parallax.forEach(el => {
+        const r = el.parentElement.getBoundingClientRect();
+        if (r.bottom < 0 || r.top > vh) return;
+        const mid = r.top + r.height / 2 - vh / 2;
+        el.style.transform = `translate3d(0,${(-mid * +el.dataset.parallax).toFixed(1)}px,0)`;
+      });
+      this.scrubWords.forEach(p => {
+        const r = p.getBoundingClientRect();
+        const prog = Math.min(1, Math.max(0, (vh * 0.85 - r.top) / (r.height + vh * 0.35)));
+        const kids = p.children, n = kids.length, lit = reduce || !anim ? n : Math.round(prog * n);
+        for (let i = 0; i < n; i++) kids[i].style.opacity = i < lit ? '1' : '0.18';
+      });
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    this.onScroll();
+  }
+  countUp(el) {
+    if (el.dataset.done) return; el.dataset.done = '1';
+    const to = +el.dataset.count, t0 = performance.now(), d = 1600;
+    const step = (t) => { const k = Math.min(1, (t - t0) / d), e = 1 - Math.pow(1 - k, 3); el.textContent = Math.round(to * e); if (k < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('scroll', this.onScroll);
+    document.removeEventListener('mousedown', this.onDown);
+    document.removeEventListener('keydown', this.onKey);
+    this.io && this.io.disconnect();
+  }
+  renderVals() {
+    const s = this.state;
+    const isMobile = s.w < 1180;
+    const solid = s.scrolled || s.menu || s.mobileOpen;
+    const labels = ['01 — Cloud Modernization', '02 — Cybersecurity & Zero Trust', '03 — Data & Analytics', '04 — Digital Services'];
+    const v = {
+      headerRef: this.headerRef,
+      headerBg: solid ? 'rgba(15,42,68,.97)' : 'rgba(15,42,68,0)',
+      headerBlur: solid ? 'blur(10px)' : 'none',
+      headerLine: solid ? 'rgba(255,255,255,.1)' : 'rgba(255,255,255,0)',
+      headerH: s.scrolled ? '72px' : '92px',
+      isMobile, isDesktop: !isMobile,
+      capOpen: !isMobile && s.menu === 'cap',
+      aboutOpen: !isMobile && s.menu === 'about',
+      mobileOpen: isMobile && s.mobileOpen,
+      accCap: s.accCap, accAbout: s.accAbout,
+      accCapSign: s.accCap ? '−' : '+', accAboutSign: s.accAbout ? '−' : '+',
+      burgerPath: s.mobileOpen ? 'M4 4l12 12M16 4 4 16' : 'M3 6h14M3 10h14M3 14h14',
+      toggleCap: () => this.setState({ menu: s.menu === 'cap' ? null : 'cap' }),
+      toggleAbout: () => this.setState({ menu: s.menu === 'about' ? null : 'about' }),
+      toggleMobile: () => this.setState({ mobileOpen: !s.mobileOpen }),
+      toggleAccCap: () => this.setState({ accCap: !s.accCap }),
+      toggleAccAbout: () => this.setState({ accAbout: !s.accAbout }),
+      capLabel: labels[s.cap],
+      showPre: !s.preDone,
+      ppCols: s.w < 900 ? 'minmax(0,1fr)' : 'minmax(0,1.35fr) minmax(0,1fr)',
+      capPos: s.w < 1040 ? 'relative' : 'sticky',
+      capAR: s.w < 1040 ? '16/10' : '4/5',
+    };
+    for (let i = 0; i < 4; i++) {
+      const on = s.cap === i;
+      v['cap' + i] = () => { if (this.state.cap !== i) this.setState({ cap: i }); };
+      v['capA' + i] = on;
+      v['capC' + i] = on ? '#FFFFFF' : 'rgba(255,255,255,.45)';
+      v['capR' + i] = on ? '90deg' : '0deg';
+      v['capG' + i] = on ? '1fr' : '0fr';
+      v['capO' + i] = on ? 1 : 0;
+      v['capS' + i] = on ? 1 : 1.08;
+    }
+    return v;
+  }
+}
+</script>
+</body>
+</html>
